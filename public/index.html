@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>飞鱼映画</title>
+</head>
+<script>
+  var regex_match = /(nokia|iphone|android|motorola|^mot-|softbank|foma|docomo|kddi|up.browser|up.link|htc|dopod|blazer|netfront|helio|hosin|huawei|novarra|CoolPad|webos|techfaith|palmsource|blackberry|alcatel|amoi|ktouch|nexian|samsung|^sam-|s[cg]h|^lge|ericsson|philips|sagem|wellcom|bunjalloo|maui|symbian|smartphone|midp|wap|phone|windows ce|iemobile|^spice|^bird|^zte-|longcos|pantech|gionee|^sie-|portalmmm|jigs browser|hiptop|^benq|haier|^lct|operas*mobi|opera*mini|320x320|240x320|176x220)/i;
+
+  var userAgent = navigator.userAgent;
+  var result = regex_match.test(userAgent);
+  var URL=location.href
+  if( result ){
+  }else{
+    document.location.href ='/isNomobile.html';
+  }
+  
+  window.addEventListener("touchmove", function (event) {
+    if (event.touches.length > 1 || event.changedTouches.length > 1 || event.targetTouches.length > 1) {
+      event.preventDefault();
+    }
+  }, true);
+  window.addEventListener('touchstart', function (event) {
+    if (event.touches.length > 1 || event.changedTouches.length > 1 || event.targetTouches.length > 1) {
+      event.preventDefault();
+    }
+
+  }, true);
+
+  window.addEventListener('touchmove', function (event) {
+    if (event.touches.length > 1 || event.changedTouches.length > 1 || event.targetTouches.length > 1) {
+      event.preventDefault();
+    }
+  }, true);
+
+
+  window.onload = function () {
+
+    document.addEventListener('touchstart', function (event) {
+
+      if (event.touches.length > 1) {
+
+        event.preventDefault();
+
+      }
+
+    });
+    document.addEventListener('touchmove', function (event) {
+      if (event.touches.length > 1) {
+        event.preventDefault();
+      }
+    });
+
+    var lastTouchEnd = 0;
+
+    document.addEventListener('touchend', function (event) {
+
+      var now = (new Date()).getTime();
+
+      if (now - lastTouchEnd <= 300) {
+
+        event.preventDefault();
+
+      }
+
+      lastTouchEnd = now;
+
+    }, false);
+
+    document.addEventListener('gesturestart', function (event) {
+
+      event.preventDefault();
+
+    });
+
+
+
+  }
+
+// window.onorientationchange=function(){                屏幕旋转事件
+//     if(window.orientation==90||window.orientation==-90){
+//         alert('横屏了');
+//     }else{
+//         alert('没有横屏');
+//     }
+// }
+
+</script>
+
+<body>
+  <noscript>
+    <strong>很抱歉，如果没有启用javascript，应用程序无法正常工作.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>

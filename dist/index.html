@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang=zh><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><link rel=icon href=/favicon.ico><title>飞鱼映画</title><link href=/css/chunk-0499be95.22746909.css rel=prefetch><link href=/css/chunk-0b8d8368.344867bf.css rel=prefetch><link href=/css/chunk-1765a9fa.d1104d75.css rel=prefetch><link href=/css/chunk-19224380.5fc2c20a.css rel=prefetch><link href=/css/chunk-3264e217.8a93abc4.css rel=prefetch><link href=/css/chunk-40e7e953.23039b05.css rel=prefetch><link href=/css/chunk-4372dd56.9b9515b8.css rel=prefetch><link href=/css/chunk-4a287f9a.fe690b69.css rel=prefetch><link href=/css/chunk-4b4d77ad.79b90333.css rel=prefetch><link href=/css/chunk-4fbd2487.27126920.css rel=prefetch><link href=/css/chunk-53be8334.bd25a37a.css rel=prefetch><link href=/css/chunk-5bbadaea.1dce3456.css rel=prefetch><link href=/css/chunk-5c08ea38.d09f0ade.css rel=prefetch><link href=/css/chunk-709ee6fe.b68d1729.css rel=prefetch><link href=/css/chunk-74d06929.817a421c.css rel=prefetch><link href=/css/chunk-7511cae5.8a93abc4.css rel=prefetch><link href=/css/chunk-79b90298.23ea7d8e.css rel=prefetch><link href=/css/chunk-833c9466.0826df9a.css rel=prefetch><link href=/css/chunk-8b05f08a.6e93eeea.css rel=prefetch><link href=/css/chunk-a39b9f66.4c9fd55c.css rel=prefetch><link href=/css/chunk-d66d295c.deeeafc7.css rel=prefetch><link href=/css/chunk-e919319e.92d46d47.css rel=prefetch><link href=/js/chunk-0499be95.145f4375.js rel=prefetch><link href=/js/chunk-0b8d8368.1963ce87.js rel=prefetch><link href=/js/chunk-1765a9fa.e126c56a.js rel=prefetch><link href=/js/chunk-19224380.a0e8f3a5.js rel=prefetch><link href=/js/chunk-21a30340.e845d77e.js rel=prefetch><link href=/js/chunk-2468466a.192558ff.js rel=prefetch><link href=/js/chunk-3264e217.5f331dbb.js rel=prefetch><link href=/js/chunk-40e7e953.063cdc80.js rel=prefetch><link href=/js/chunk-4372dd56.97e855a1.js rel=prefetch><link href=/js/chunk-4a287f9a.4fac6ece.js rel=prefetch><link href=/js/chunk-4b4d77ad.9a6f70d5.js rel=prefetch><link href=/js/chunk-4fbd2487.217970b8.js rel=prefetch><link href=/js/chunk-53be8334.4004fd5d.js rel=prefetch><link href=/js/chunk-5bbadaea.9bba5903.js rel=prefetch><link href=/js/chunk-5c08ea38.99a3b9b5.js rel=prefetch><link href=/js/chunk-709ee6fe.d8d2c7bc.js rel=prefetch><link href=/js/chunk-74d06929.3fa7d221.js rel=prefetch><link href=/js/chunk-7511cae5.6c055136.js rel=prefetch><link href=/js/chunk-79b90298.9f01c1b4.js rel=prefetch><link href=/js/chunk-833c9466.c2f6afb2.js rel=prefetch><link href=/js/chunk-8b05f08a.8be49bca.js rel=prefetch><link href=/js/chunk-a39b9f66.882f4dd0.js rel=prefetch><link href=/js/chunk-d66d295c.caa64d76.js rel=prefetch><link href=/js/chunk-e919319e.d4169198.js rel=prefetch><link href=/css/app.a67ecfd2.css rel=preload as=style><link href=/css/chunk-vendors.e6731586.css rel=preload as=style><link href=/js/app.898a2ff8.js rel=preload as=script><link href=/js/chunk-vendors.149161c1.js rel=preload as=script><link href=/css/chunk-vendors.e6731586.css rel=stylesheet><link href=/css/app.a67ecfd2.css rel=stylesheet></head><script>var regex_match = /(nokia|iphone|android|motorola|^mot-|softbank|foma|docomo|kddi|up.browser|up.link|htc|dopod|blazer|netfront|helio|hosin|huawei|novarra|CoolPad|webos|techfaith|palmsource|blackberry|alcatel|amoi|ktouch|nexian|samsung|^sam-|s[cg]h|^lge|ericsson|philips|sagem|wellcom|bunjalloo|maui|symbian|smartphone|midp|wap|phone|windows ce|iemobile|^spice|^bird|^zte-|longcos|pantech|gionee|^sie-|portalmmm|jigs browser|hiptop|^benq|haier|^lct|operas*mobi|opera*mini|320x320|240x320|176x220)/i;
+
+  var userAgent = navigator.userAgent;
+  var result = regex_match.test(userAgent);
+  var URL=location.href
+  if( result ){
+  }else{
+    document.location.href ='/isNomobile.html';
+  }
+  
+  window.addEventListener("touchmove", function (event) {
+    if (event.touches.length > 1 || event.changedTouches.length > 1 || event.targetTouches.length > 1) {
+      event.preventDefault();
+    }
+  }, true);
+  window.addEventListener('touchstart', function (event) {
+    if (event.touches.length > 1 || event.changedTouches.length > 1 || event.targetTouches.length > 1) {
+      event.preventDefault();
+    }
+
+  }, true);
+
+  window.addEventListener('touchmove', function (event) {
+    if (event.touches.length > 1 || event.changedTouches.length > 1 || event.targetTouches.length > 1) {
+      event.preventDefault();
+    }
+  }, true);
+
+
+  window.onload = function () {
+
+    document.addEventListener('touchstart', function (event) {
+
+      if (event.touches.length > 1) {
+
+        event.preventDefault();
+
+      }
+
+    });
+    document.addEventListener('touchmove', function (event) {
+      if (event.touches.length > 1) {
+        event.preventDefault();
+      }
+    });
+
+    var lastTouchEnd = 0;
+
+    document.addEventListener('touchend', function (event) {
+
+      var now = (new Date()).getTime();
+
+      if (now - lastTouchEnd <= 300) {
+
+        event.preventDefault();
+
+      }
+
+      lastTouchEnd = now;
+
+    }, false);
+
+    document.addEventListener('gesturestart', function (event) {
+
+      event.preventDefault();
+
+    });
+
+
+
+  }
+
+// window.onorientationchange=function(){                屏幕旋转事件
+//     if(window.orientation==90||window.orientation==-90){
+//         alert('横屏了');
+//     }else{
+//         alert('没有横屏');
+//     }
+// }</script><body><noscript><strong>很抱歉，如果没有启用javascript，应用程序无法正常工作.</strong></noscript><div id=app></div><script src=/js/chunk-vendors.149161c1.js></script><script src=/js/app.898a2ff8.js></script></body></html>

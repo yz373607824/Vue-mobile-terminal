@@ -1,0 +1,182 @@
+@import "./font.css";
+html,body,div,p,h1,h2,h3,h4,h5,h6,a,span,i,table,ul,li,dl,dd,dt,ol,img,article,select,section{
+    padding: 0;
+    margin: 0;
+    border:0;
+    outline: none;
+}
+body{
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+    color: #58504e;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+
+input{
+    resize: none;
+    padding: 0;
+    margin: 0;
+    outline: none
+}
+a{
+    text-decoration: none;
+    color: #58504e;
+}
+img{
+    vertical-align: middle;
+    border:0
+}
+ul,li,dl,dd,dt,ol{
+    list-style: none;
+}
+
+/* 字颜色 */
+.color{
+    color: #fa7b5a;
+}
+.colorSpare{
+    color: #ffcb57;
+}
+
+/* 字-背景 */
+.bg-active{
+    background: #fa7b5a;
+    color: white;
+}
+
+.marginTop{
+    margin-top:3.5rem;
+}
+
+.clear::after,.clear::before{
+    content: '';
+    height: 0;
+    clear: both;
+    display: inline-block;
+}
+.active{
+    color: #fa7b5a
+}
+
+.router-link-active{
+    /* color: #fa7b5a */
+}
+
+/* 公共调用 */
+.fontsize{
+    font-size: 1rem;
+}
+.bodyfilter{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: blur(4px);
+ }
+
+
+
+
+/* home */
+.wrapMain{
+    margin: 0rem 0 2rem;
+}
+
+/* 按钮 */
+.Sign{
+  width:100%;
+  text-align: center;
+  font-size: 1rem;
+}
+.Sign_out{
+  width:70%;
+}
+
+/* 禁止拷贝 */
+img,video {
+-webkit-touch-callout: none;
+}
+
+/* 禁止复制 */
+*{
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
+/* 列表加载动画 */
+.timg{
+    font-size: 1.2rem;
+    text-align:center;
+    padding:1rem 0 0;
+    color: #6e6e6e;
+}
+.error404{
+    width: 100%;
+    height: 100%;
+    margin-top: 3.5rem;
+    text-align: center;
+}
+.timg img{
+    width: 5rem;
+}
+
+/* 列表 */
+.list-wrap{
+    padding-bottom: 3.5rem;
+}
+
+
+
+
+
+
+/* 重新定义 */
+/* vant */
+.van-button--normal{
+    font-size: 1.2rem !important
+}
+.van-button{
+    height:3.3rem !important;
+}
+.van-dialog__message{
+    font-size: 1rem !important;
+    line-height:1.66rem !important;
+}
+.van-button,.van-dialog__header{
+    font-size: 1.2rem !important;
+}
+.van-notice-bar{
+    height:auto !important;
+    font-size: 1.2rem !important;
+    line-height: normal !important;
+    padding: 0.5rem 1.2rem !important;
+}
+.van-notice-bar__wrap{
+    height: 2rem !important;
+}
+.van-notice-bar__left-icon, .van-notice-bar__right-icon{
+    font-size: 1.2rem !important;
+}
+
+.van-tree-select{
+    font-size: 1.1rem !important;
+}
+
+

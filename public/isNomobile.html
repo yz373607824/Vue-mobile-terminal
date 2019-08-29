@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" href="favicon.ico">
+  <title>飞鱼映画</title>
+</head>
+<script>
+  var regex_match = /(nokia|iphone|android|motorola|^mot-|softbank|foma|docomo|kddi|up.browser|up.link|htc|dopod|blazer|netfront|helio|hosin|huawei|novarra|CoolPad|webos|techfaith|palmsource|blackberry|alcatel|amoi|ktouch|nexian|samsung|^sam-|s[cg]h|^lge|ericsson|philips|sagem|wellcom|bunjalloo|maui|symbian|smartphone|midp|wap|phone|windows ce|iemobile|^spice|^bird|^zte-|longcos|pantech|gionee|^sie-|portalmmm|jigs browser|hiptop|^benq|haier|^lct|operas*mobi|opera*mini|320x320|240x320|176x220)/i;
+
+  var userAgent = navigator.userAgent;
+  var result = regex_match.test(userAgent);
+  var URL=location.href
+  if( result ){ 
+    document.location.href ='/';
+  }
+
+</script>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+.isMobile{
+  text-align: center;
+  padding: 3rem 0;
+}
+.isMobile img{
+  width: 25%
+}
+</style>
+<body>
+  <noscript>
+    <strong>很抱歉，如果没有启用javascript，应用程序无法正常工作.</strong>
+  </noscript>
+  <section class="isMobile">
+      <p><img src="logo.png" alt="飞鱼映画"/></p>
+      <p style="padding-top:3rem"><img src="isMobile.gif" alt="飞鱼映画"></p>
+      <h1>请使用正确姿势浏览网站!</h1>
+      <h4>(不支持PC端浏览)</h4>
+  </section>
+</body>
+
+</html>

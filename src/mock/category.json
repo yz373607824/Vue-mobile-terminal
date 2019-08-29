@@ -1,0 +1,177 @@
+{
+    "msg": "ok",
+    "items": [
+        {
+            "name": "段子",
+            "childname": [
+                {
+                    "name": "猎奇段子",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "文字趣事",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "浮夸段子",
+                    "url": "/typelist"
+                }
+            ]
+        },
+        {
+            "name": "小说",
+            "childname": [
+                {
+                    "name": "现代小说",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "玄幻小说",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "竞技小说",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "二次元",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "武侠小说",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "现代小说",
+                    "url": "/typelist"
+                }
+            ]
+        },
+        {
+            "name": "短视频",
+            "childname": [
+                {
+                    "name": "搞笑视频",
+                    "url": "/videolist"
+                },
+                {
+                    "name": "趣味广告",
+                    "url": "/videolist"
+                },
+                {
+                    "name": "社区",
+                    "url": "/videolist"
+                },
+                {
+                    "name": "生活",
+                    "url": "/videolist"
+                },
+                {
+                    "name": "创意",
+                    "url": "/videolist"
+                },
+                {
+                    "name": "剧情",
+                    "url": "/videolist"
+                }
+            ]
+        },
+        {
+            "name": "漫画",
+            "childname": [
+                {
+                    "name": "玄幻",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "都市",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "校园",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "恐怖",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "悬疑",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "爆笑",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "推理",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "动作",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "萌系",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "唯美",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "唯美",
+                    "url": "/typelist"
+                }
+            ]
+        },
+        {
+            "name": "影视",
+            "childname": [
+                {
+                    "name": "国产剧",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "日韩剧",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "欧美大片",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "港台剧",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "武侠片",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "文艺片",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "爱情片",
+                    "url": "/typelist"
+                },
+                {
+                    "name": "剧情",
+                    "url": "/typelist"
+                }
+            ]
+        },
+        {
+            "name": "其他",
+            "childname": [
+                {
+                    "name": "猎其他奇段子",
+                    "url": "/typelist"
+                }
+            ]
+        }
+    ],
+    "count": 10,
+    "type": "分类"
+}

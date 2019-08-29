@@ -1,0 +1,5 @@
+
+RewriteEngine On
+RewiteBase /          
+
+ RewriteRule .*.(jpe?g|gif|bmp|png)$ /img/error.718cb171.gif [L] 
